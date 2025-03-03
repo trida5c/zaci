@@ -3,25 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My jsme 5.C</title>
-    <link rel="stylesheet" href="https://trida5c.github.io/web/static/styles.css">
+    <title>Žáci 5.C</title>
+    <link rel="stylesheet" href="web/static/styles.css">
     <style>
+        body {
+            text-align: center;
+        }
         .students-container {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
             gap: 2rem;
-            text-align: center;
+            padding: 0 1rem;
         }
         .column {
             flex: 1;
             min-width: 200px;
+            text-align: left;
         }
         .teacher {
-            text-align: center;
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             font-weight: bold;
             margin-bottom: 1rem;
+        }
+        @media (max-width: 768px) {
+            .students-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .column {
+                text-align: center;
+            }
         }
     </style>
 </head>
@@ -30,8 +42,8 @@
         <h1>Žáci 5.C</h1>
         <nav>
             <ul>
-                <li><a href="https://trida5c.github.io">Domů</a></li>
-                <li><a href="index.html">Žáci</a></li>
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="zaci.html">Žáci</a></li>
             </ul>
         </nav>
     </header>
